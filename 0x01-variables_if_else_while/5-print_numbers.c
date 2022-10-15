@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  * Description: 'to print numbers in base 10'
@@ -6,7 +7,6 @@
  */
 int main(void)
 {
-
 	int num;
 
 	for (num = 0; num < 10; num++)
