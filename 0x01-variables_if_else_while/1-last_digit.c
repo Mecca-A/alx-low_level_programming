@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
  * main - Determines either greater than 5, is less than 6, or is 0
  *
@@ -11,7 +12,7 @@ int main(void)
 	int n, l;
 
 	srand(time(0));
-	n - rand() - RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
 	l = n % 10;
 	if (l > 5)
 	{
