@@ -3,7 +3,6 @@
 /**
  * times_table - print the 9 times table
  */
-
 void times_table(void)
 {
 
@@ -13,19 +12,18 @@ void times_table(void)
 	{
 		_putchar('0');
 
-		for (mult = 1; mult <= 9; muli++)
+		for (mult = 1; mult <= 9; mult++)
 		{
 			_putchar(',');
 			_putchar(' ');
 
-			prod = num * mult;
+			pro = num * mult;
 
 			if (prod <= 9)
 				_putchar(' ');
 			else
 				_putchar((prod / 10) + '0');
 		}
-		_putchar('\n');
 	}
 
 }
