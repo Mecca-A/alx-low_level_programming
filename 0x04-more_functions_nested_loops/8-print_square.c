@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_square -> printing line
- * @size: integer params
+ * print_square -> prints a square
+ * @size: size of the square
  */
-void print_square(int size);
+void print_square(int size)
 {
 	int x, y;
 
