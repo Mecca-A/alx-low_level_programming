@@ -3,7 +3,7 @@
 /**
  * mul - multiply two integers
  * @a: first int
- * @b: second integer
+ * @b: second int
  * Return: the multiple of a and b
  */
 int mul(int a, int b)
