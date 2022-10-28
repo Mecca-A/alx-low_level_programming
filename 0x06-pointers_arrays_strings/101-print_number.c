@@ -7,27 +7,27 @@
  */
 void print_number(int n)
 {
-	unsigned int m, d, count;
+	unsigned int x, y, count;
 
 	if (n < 0)
 	{
 		_putchar(45);
-		m = n * -1;
+		x = n * -1;
 	}
 	else
 	{
-		m = n;
+		x = n;
 	}
-	d = m;
+	y = x;
 	count = 1;
 
-	while (d > 9)
+	while (y > 9)
 	{
-		d / = 10;
+		y / = 10;
 		count *= 10;
 	}
-	for (; count >= 1; count /= 10)
+	for (count >= 1; count /= 10)
 	{
-		_putchar(((m / count) % 10) + 48);
+		_putchar(((x / count) % 10) + 48);
 	}
 }
