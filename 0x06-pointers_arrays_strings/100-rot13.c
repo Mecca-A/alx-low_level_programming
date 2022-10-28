@@ -16,12 +16,12 @@ char *rot13(char *str)
 	{
 		for (y = 0; x[y] != '\0'; y++)
 		{
-			if (s[i] == x[y])
+			if (str[i] == x[y])
 			{
-				s[i] = m[y];
+				str[i] = m[y];
 				break;
 			}
 		}
 	}
-	return (s);
+	return (str);
 }
