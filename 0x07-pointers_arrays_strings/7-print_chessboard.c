@@ -2,16 +2,16 @@
 
 /**
  * print_chessboard - prints a chessboard
- * @x: the chessboard to be printed
+ * @a: the chessboard to be printed
  */
-void print_chessboard(char (*x)[8])
+void print_chessboard(char (*a)[8])
 {
-	int index1, index2;
+	int indx1, indx2;
 
-	for (index1 = 0; x[index1][7]; index1++)
+	for (indx1 = 0; a[indx1][7]; indx1++)
 	{
-		for (index2 = 0; index2 < 8; index2++)
-			_putchar(a[index1][index2]);
+		for (indx2 = 0; indx2 < 8; indx2++)
+			_putchar(a[indx1][indx2]);
 		_putchar('\n');
 	}
 }
