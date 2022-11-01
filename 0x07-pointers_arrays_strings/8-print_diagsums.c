@@ -6,23 +6,15 @@
  * square matrix of integers.
  * @a:the matrix of integers.
  * @size: size of the matrix.
- * Return: Always 0 (Success).
  */
 void print_diagsums(int *a, int size)
 {
-	int index, sum1 = 0, sum2 = 0;
+	int index, n, sum1 = 0, sum2 = 0;
 
-	for (index = 0; index < size; index++)
-	{
-		sum1 += a[index];
-		a += size;
-	}
-	a -= size;
+	for (index = 0; index <= (size * size); index = index + size + 1)
+		sum1 = sum1 + a[index];
 
-	for (index = 0; index < size; inde++)
-	{
-		sum2 += a[index];
-		a -= size;
-	}
-	print("%d, %d\n", sum1, sum2);
+	for (n = size - 1; n <= (size * size) - size; n = n + size - 1)
+		sum2 = sum2 + a[n];
+	printf("%d, %d\n", sum1, sum2);
 }
