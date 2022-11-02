@@ -3,6 +3,7 @@
 /**
  * _print_rev_recursion - prints a string in reverse
  * @s: string
+ *
  * Return: 1 (success)
  * return -1 on error and set errno appropriately
  */
@@ -11,7 +12,7 @@ void _print_rev_recursion(char *s)
 {
 	if (*s != '\0')
 	{
-	_print_rev_recursion(s + 1);
-	_puchar(*s);
+		_print_rev_recursion(s + 1);
+		_puchar(*s);
 	}
 }
