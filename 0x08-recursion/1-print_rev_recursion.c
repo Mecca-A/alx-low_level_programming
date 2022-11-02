@@ -3,7 +3,8 @@
 /**
  * _print_rev_recursion - prints a string in reverse
  * @s: string
- * Return: void
+ * Return: 1 (success)
+ * return -1 on error and set errno appropriately
  */
 
 void _print_rev_recursion(char *s)
