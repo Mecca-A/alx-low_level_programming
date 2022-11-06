@@ -1,5 +1,6 @@
-#include <main.h>
-#include <stdioh>
+#include <stdio.h>
+#include "main.h"
+#include <stdlib.h>
 
 /**
  * main - Prints all arguments passed into main
